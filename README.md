@@ -1,6 +1,6 @@
 # Nhom_7_Khoa_Hoc_Du_Lieu
 # Hướng dẫn chạy notebook và script
-
+# Link Youtube: https://youtu.be/Wffa7-w9uEE?si=rSzSiN1xcD5eOpqE
 ## Mục đích
 
 Thư mục này chứa:
@@ -25,21 +25,31 @@ Thư mục này chứa:
 ## Chạy trực tiếp bằng terminal
 
 1. Mở terminal trong thư mục dự án.
-2. Kích hoạt môi trường ảo, cài đặt thư viện và chạy notebook bằng các câu lệnh dưới đây:
+2. Kích hoạt virtual environment (Chọn lệnh phù hợp với Terminal cậu đang dùng)
 
-```bash
-# ---- BƯỚC 1: KÍCH HOẠT VIRTUAL ENVIRONMENT ----
-# Nếu dùng PowerShell:
-.\.venv\Scripts\Activate.ps1
-# Nếu dùng Command Prompt (CMD):
-.\.venv\Scripts\activate.bat
+   Nếu dùng Command Prompt (CMD) / DOS:
+   ```
+   .\.venv\Scripts\activate.bat
+   ```
+   Nếu dùng PowerShell:
+   ```
+    .\.venv\Scripts\Activate.ps1
+   ```
+3. Cài các gói cần thiết nếu cần:
+   ```
+   pip install jupyter pandas matplotlib seaborn
+   ```
+4. Chạy trực tiếp notebook bằng nbconvert:
+   ```
+   python -m nbconvert --to notebook --execute batdongsan.ipynb --inplace
+   ```
+5. Hoặc mở Jupyter Notebook trực tiếp:
+   ```
+   python -m notebook#
+   ```
+### Ghi chú
+- File run_nb.py là tùy chọn và không bắt buộc để chạy batdongsan.ipynb.
 
-# ---- BƯỚC 2: CÀI CÁC GÓI CẦN THIẾT ----
-pip install jupyter pandas matplotlib seaborn
+- Nếu notebook sử dụng đường dẫn tương đối, đảm bảo batdongsan_vietnam1.csv nằm trong cùng thư mục.
 
-# ---- BƯỚC 3: CHẠY NOTEBOOK ----
-# Cách 3a: Chạy trực tiếp bằng nbconvert
-python -m nbconvert --to notebook --execute batdongsan.ipynb --inplace
-
-# Cách 3b: Hoặc mở giao diện Jupyter Notebook trên trình duyệt
-python -m notebook
+- Nếu notebook cần thư viện bổ sung, cài thêm với pip install .
