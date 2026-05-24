@@ -1,6 +1,7 @@
 # Nhom_7_Khoa_Hoc_Du_Lieu
 # Hướng dẫn chạy notebook và script
 # Link Youtube: https://youtu.be/Wffa7-w9uEE?si=rSzSiN1xcD5eOpqE
+# Link Slide: https://www.canva.com/design/DAHKcmfVKxI/JAnwsQfnNMCsIy1_KD8Y5g/edit
 ## Mục đích
 
 Thư mục này chứa:
